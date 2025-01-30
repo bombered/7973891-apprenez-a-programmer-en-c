@@ -14,6 +14,6 @@ if (args.Count() == 1)
 }
 else
 {
-    BonjourConditionel.DireBonjour("le monde");
+    BonjourConditionel.DireBonjour("tout le monde");
 }
 

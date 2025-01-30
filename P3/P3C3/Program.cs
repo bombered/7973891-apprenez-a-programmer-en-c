@@ -1,17 +1,23 @@
-﻿Console.WriteLine("Essayons une addition !");
+﻿
 int x = 1;
 int y = 2;
-int z = x + y;
-Console.WriteLine("La somme est de " + z);
+addition(x, y);
 
-Console.WriteLine("Essayons une addition !");
 int i = 3;
 int j = 4;
-int k = i + j;
-Console.WriteLine("La somme est de " + k);
+addition(i, j);
 
-Console.WriteLine("Essayons une addition !");
 int var1 = 5;
 int var2 = 6;
-int var3 = var1 + var2;
-Console.WriteLine("La somme est de " + var3);
+addition(var1, var2);
+
+static void addition(int a, int b)
+{
+    operation();
+    Console.WriteLine("la somme est de " + (a + b));
+}
+
+static void operation()
+{
+    Console.WriteLine("Essayons une addition");
+}

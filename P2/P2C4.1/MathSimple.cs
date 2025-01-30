@@ -9,13 +9,20 @@ public class MathSimple
     /// <returns>La moyenne de la liste</returns>
     public static int CalculMoyenne(List<int> listeDesEntiers)
     {
-        int moyenne = 0;
+        int moyenne = 1;
 
         foreach (int valeur in listeDesEntiers)
         {
             moyenne += valeur;
         }
-        moyenne /= listeDesEntiers.Count;
+        if (moyenne == 0)
+        {
+            moyenne = 0;
+        }
+        else
+        {
+            moyenne /= listeDesEntiers.Count;
+        }
 
         return moyenne;
     }
